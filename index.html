@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Morning Ria</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .header_text {
+            font-size: clamp(20px, 5vw, 40px); /* Responsive text size */
+            font-weight: bold;
+            margin-bottom: 15px; /* Space between text and GIF */
+            color: #333; /* Darker text for better readability */
+        }
+
+        .gif_container img {
+            max-width: 100%; /* Ensures image fits smaller screens */
+            height: auto;
+            border-radius: 10px; /* Soft edges */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a slight shadow for depth */
+        }
+
+        /* Adjustments for smaller screens */
+        @media (max-width: 480px) {
+            body {
+                height: auto;
+                padding-top: 30px;
+            }
+
+            .header_text {
+                font-size: clamp(18px, 6vw, 35px);
+            }
+
+            .gif_container img {
+                max-width: 90%; /* Slightly smaller on very small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="header_text">Good morning, Ria! ☀️</h1>
+    </div>
+    <div class="gif_container">
+        <img src="https://media.giphy.com/media/FElR3ylsj6PTy/giphy.gif?cid=ecf05e47k9xavnyhpeffbob7sk150fvuo43m57lujowjxoao&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Good Morning GIF">
+    </div>
+</body>
+</html>
